@@ -1,23 +1,25 @@
 
-Git是目前世界上最先进的分布式版本控制系统（没有之一）
-创建版本库：在合适的地方使用mkdir命令创建目录
-pwd命令显示当前目录
-使用git init 命令将创建的目录变成Git可以管理的仓库
-git add <file>命令将文件添加到仓库
-git commit -m <message>命令文件提交到仓库
-修改文件中的内容之后使用git status命令查看结果
-git diff <file>可以查看具体修改的内容
-git add、git commit重新提交
+# Git是目前世界上最先进的分布式版本控制系统（没有之一）
+
+> ## 基本命令
+> 创建版本库：在合适的地方使用mkdir命令创建目录
+> pwd命令显示当前目录
+> 使用git init 命令将创建的目录变成Git可以管理的仓库
+> git add <file>命令将文件添加到仓库
+> git commit -m <message>命令文件提交到仓库
+> 修改文件中的内容之后使用git status命令查看结果
+> git diff <file>可以查看具体修改的内容
+> git add、git commit重新提交
 
 
-时光穿梭机
-git log命令显示从最近到最远的提交日志
-git log --pretty=oneline 显示版本号和提交日志
-回退到上一个版本git reset --hard HEAD^
-git reset --hard <版本号前几位>
-git reflog 记录每一次命令（即可以找到所有的版本号）
+## 时光穿梭机
+> git log命令显示从最近到最远的提交日志
+> git log --pretty=oneline 显示版本号和提交日志
+> 回退到上一个版本git reset --hard HEAD^
+> git reset --hard <版本号前几位>
+> git reflog 记录每一次命令（即可以找到所有的版本号）
 
-工作区是在电脑中能看到的目录，版本库是工作区中的隐藏目录 .git
+## 工作区是在电脑中能看到的目录，版本库是工作区中的隐藏目录 .git
  
 stage 为暂存区，git add将文件添加到暂存区
 创建Git版本库时，Git自动为我们创建了master分支，git commit将暂存区的所有内容提交到当前分支。
